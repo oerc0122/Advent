@@ -1,0 +1,13 @@
+',;;ri                         "Load Data"
+0hd                            "Hide IP"
+{                              "Duplicate twice"
+^^^^                           "Start While"
+4co                            "Break into 4 long segments"
+0ld^^1.+hd!!                   "Load block at IP; increment IP"
+^^-]                           "Get OP code"vv
+{{1==} {^^~-x/jsi++\/[~sa}     "If 1: replace item at tail (4) with sum of 1,2"vv
+ {2==} {^^~-x/jsipd\/[~sa}     "If 2: replace item at tail (4) with prod of 1,2"vv
+ {99==} {99}}                  "If 99: Push 99"vv
+cne!}                          "Evaluate condition result"vv
+{^^to"Block"==}w!              "While top of stack is a list"vv
+vvvvvv                         "Dump junk"

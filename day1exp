@@ -1,0 +1,27 @@
+ps	 Parse string to list push to stack
+3?/	 Divide by 3
+2?-      Subtract 2
+{
+ ^^	 Duplicate top of stack
+ 3?/2?-	 /3 -2
+ {
+  0.>	 Greater than zero
+  }f[	 Filter elements
+ }
+{
+ {
+  ++     Sum
+  0.>	 Greater than zero
+  }
+  c!	 On fictional stack
+ }
+w!	 While
+CL	 Join all objects to one block
+{
+ ++	 Sum
+ }
+m[	 Apply to all elements
+{
+ .+	 Sum
+ }
+r[	 Reduce
