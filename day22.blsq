@@ -1,17 +1,18 @@
-ln<-
-J
-L[
+ln <-
+sa
 Pp
 p^
-0 9
-r@
+10006
+rz
 {
   #R
   ^^
   {
-    {"stack" ~=} {vv<-}
-    {"cut" ~=} {' ;;[~ri {1!!.<}j2iaj j0z[ j pt <-++ u[vv}
-    {^^ "increment" ~=} {r0z[}
+    {"stack" ~=} {vv ziu[ j sa?-ngz[ ([-)sc u[vv}
+    {"cut" ~=} {wd[~ri jziu[ j x/?+sa.%z[ ([-)sc u[vv}
+    {"increment" ~=} {wd[~ri jziu[ j x/?*sa.%z[ ([-)sc u[vv}
   }cn
   e!
 }PPE!
+
+2019!!
