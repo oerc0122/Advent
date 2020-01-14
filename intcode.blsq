@@ -1,0 +1,49 @@
+"Load initial state"vv
+lnp^',;;riPp
+"Set IP"vv
+0hd0hd
+{
+
+ "Load instruction"vv
+ {pP#a!!}c!
+ XX5 0P[ l_l_<- x/x/j ++ J`b
+
+ "Load Parameters"vv
+ {
+   {{1 2}j~[} {{#a+.J2.+r@pPjsi}c! z[ l_
+	       {{
+		 {0==} {pPj!!}
+		 {1==} {}
+		}cn e!}m^
+	       "Get writeout point"vv
+	       j [~ j
+	       #a4.+`a    "Update IP"vv
+	     }
+   {{3 4}j~[} {
+	       {pP#a+.!!}c! z[ -~
+	       #a2.+`a    "Update IP"vv
+	     }
+   {1} {}
+ }cne!
+
+ "Perform operation"vv
+ #b
+ {
+  {1==} {++}
+  {2==} {pd}
+  {3==} {j ri}
+  {4==} {pPj [~ !!}
+  {99==} {"Exit"}
+  {1} {"Error on instruction: "#a_+" ("_+pP#a!!_+")"_+Pp"Exit"}
+ }cne!
+
+ "Update code"vv
+ #b
+ {
+  {{1 2 3}j~[} {j [~ PP x/x/sa Pp}
+  {4==} {Ppp/}
+  {1} {}
+ }cne!
+
+}{{"Exit"!=}c!}w!
+p\

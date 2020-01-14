@@ -1,16 +1,41 @@
+"Load initial state"vv
 lnp^',;;riPp
+"Set IP"vv
 0hd
 {
-{pP#a!!}c!
-XX5 0P[ l_l_<- x/x/j ++
-{
-{1==} {{#a+.J2.+r@pPjsi}c! z[ l_ {{{0==} {pPj!!} {1==} {}}cne!}m^++ j [~ PP x/x/sa Pp #a4.+hd}
-{2==} {{#a+.J2.+r@pPjsi}c! z[ l_ {{{0==} {pPj!!} {1==} {}}cne!}m^pd j [~ PP x/x/sa Pp #a4.+hd}
-{3==} {vv ri {pP#a+.!!}c! PP x/x/sa Pp #a2.+hd}
-{4==} {{pPJ#a+.!!!!}c!  Ppp/ #a2.+hd}
-{99==} {"Exit"}
-{1} {"Error on instruction: "#a_+Pp"Exit"}
-}cn
-e!
+
+ "Load instruction"vv
+ {pP#a!!}c!
+ XX5 0P[ l_l_<- x/x/j ++ Jhd
+
+ "Load Parameters"vv
+ {
+   {{1 2}j~~} {{#a+.J2.+r@pPjsi}c! z[ l_
+	       {{
+		 {0==} {pPj!!}
+		 {1==} {}
+		}cn e!}m^
+	       #a4.+hd    "Update IP"vv
+	      }
+   {{3 4}j~~} {{pP#a+.!!}c! z[ l_
+	       {{
+		 {0==} {pPj!!}
+		 {1==} {}
+		}cn e!}m^
+	       #a2.+hd    "Update IP"vv
+	      }
+   {1} {}
+ }cne!
+
+ "Perform operation"vv
+ #b
+ {
+  {1==} {++ j [~ PP x/x/sa Pp}
+  {2==} {pd j [~ PP x/x/sa Pp}
+  {3==} {j ri j [~ PP x/x/sa Pp}
+  {4==} {pPj [~ !! Ppp/}
+  {99==} {"Exit"}
+  {1} {"Error on instruction: "#a_+Pp"Exit"}
+ }cne!
 }{{"Exit"!=}c!}w!
 p\
