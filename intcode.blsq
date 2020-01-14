@@ -19,8 +19,8 @@ lnp^',;;riPp
 	       j [~ j
 	       #a4.+`a    "Update IP"vv
 	     }
-   {{3 4}j~[} {
-	       {pP#a+.!!}c! z[ -~
+   {{3 4}j~[} {vv
+	       {pP#a+.!!}c!
 	       #a2.+`a    "Update IP"vv
 	     }
    {1} {}
@@ -32,7 +32,7 @@ lnp^',;;riPp
   {1==} {++}
   {2==} {pd}
   {3==} {j ri}
-  {4==} {pPj [~ !!}
+  {4==} {pPj !!}
   {99==} {"Exit"}
   {1} {"Error on instruction: "#a_+" ("_+pP#a!!_+")"_+Pp"Exit"}
  }cne!
@@ -40,10 +40,9 @@ lnp^',;;riPp
  "Update code"vv
  #b
  {
-  {{1 2 3}j~[} {j [~ PP x/x/sa Pp}
+  {{1 2 3}j~[} {j PP x/x/sa Pp}
   {4==} {Ppp/}
   {1} {}
  }cne!
-
 }{{"Exit"!=}c!}w!
 p\
